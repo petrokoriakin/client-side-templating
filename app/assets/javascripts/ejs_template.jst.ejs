@@ -1,0 +1,25 @@
+
+<div class="votesww"><div class="votesw">
+    <%if(votes_count > 0) {%>
+    <div class="votescount"><%=votes_count%></div>
+    <%}%>
+    <div class="votebox">
+        <div class="pupvote upvote <%if (voted) {%> upvoted <%}%>"></div>
+    </div>
+</div></div>
+
+<%if(isHost) {%>
+<ul class="tools">
+    <li class="check" original-title="Answer this now."></li>
+    <li class="remove"></li>
+</ul>
+<%}%>
+
+<div class="pcontent"><%=content%></div>
+
+<div class="userw">
+    <%if(ulink) {%> <a href="<%=ulink%>" target="_blank"> <%}%>
+    <div class="puname"> <%=uname%> </div>
+    <%if(uimage) {%> <img class="puimage" src="<%=uimage%>"/> <%}%>
+    <%if(ulink) {%> </a> <%}%>
+</div>
